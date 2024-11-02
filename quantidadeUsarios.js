@@ -50,7 +50,7 @@ async function quantidadeUsuariosPorRede() {
     }
     const grafico = document.createElement('div')
     grafico.className = 'grafico'
-    Document.getElementById('graficos-container').appendChild(grafico)
+    document.getElementById('graficos-container').appendChild(grafico)
     plotly.newPlot(grafico, data, laytout)
 }
 quantidadeUsuariosPorRede()
