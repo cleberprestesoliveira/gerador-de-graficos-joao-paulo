@@ -9,7 +9,7 @@ async function vizualizarInformacoesGlobais(){
     const porcentagemConectada=((pessoasConectadas/pessoasNoMundo)*100).toFixed(2)
      
     const paragrafo= document.createElement('p')
-    paragrafo.classlist.add('graficos-container_texto')
+    paragrafo.classList.add('graficos-container_texto')
     paragrafo.innerHTML='Você sabia que o mundo tem <span>$ {pessoasNoMundo} bilhoes</span> de pessoas e que aproximadamente <span>${pessoasConectadas}bilhoes<span> estão conectadas em alguma rede social e passam em média ,<span>${horas} horas<span> e <span>${minutos} minutos<span> conectadas.<br>isso significa que aproximadamente <span>${porcentagemconectada}%<span> de pessoas estão conectadas em alguma rede social.'
      const container= document.getElementbyld('graficos-container')
      container.appendChild(paragrafo)
